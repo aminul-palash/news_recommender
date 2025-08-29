@@ -1,0 +1,19 @@
+{
+  "mappings": {
+    "properties": {
+      "id": {"type": "integer"},
+      "title": {"type": "text", "analyzer": "standard"},
+      "content": {"type": "text", "analyzer": "standard"},
+      "category": {"type": "keyword"},
+      "source": {"type": "keyword"},
+      "url": {"type": "keyword"},
+      "published_at": {"type": "date"},
+      "popularity_score": {"type": "float"},
+      "quality_score": {"type": "float"}
+    }
+  },
+  "settings": {
+    "number_of_shards": 1,
+    "number_of_replicas": 0
+  }
+}
